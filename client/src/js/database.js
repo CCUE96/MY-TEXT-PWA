@@ -1,6 +1,6 @@
 import { openDB } from 'idb';
 
-// Function to initialize the IndexedDB database
+// Initialize the database
 const initDb = async () => {
   try {
     const db = await openDB('jate', 1, {
@@ -19,7 +19,7 @@ const initDb = async () => {
   }
 };
 
-// Function to add content to the IndexedDB
+// Add or update content in the database
 export const putDb = async (content) => {
   console.log('Adding to the database:', content);
 
@@ -27,8 +27,8 @@ export const putDb = async (content) => {
     const db = await openDB('jate', 1);
     const tx = db.transaction('jate', 'readwrite');
     const store = tx.objectStore('jate');
-    await store.put(content);
-    await tx.complete;
+    await store.put({id:1, value:content});
+    await tx.done;
     console.log('Data added to IndexedDB:', content);
   } catch (error) {
     console.error('Error adding to database:', error);
@@ -36,7 +36,7 @@ export const putDb = async (content) => {
   }
 };
 
-// Function to retrieve all content from the IndexedDB
+// Fetch all content from the database
 export const getDb = async () => {
   console.log('Fetching data from the database');
 
@@ -45,13 +45,9 @@ export const getDb = async () => {
     const tx = db.transaction('jate', 'readonly');
     const store = tx.objectStore('jate');
     const data = await store.getAll();
-    console.log('Data fetched from IndexedDB:', data);
     return data;
   } catch (error) {
-    console.error('Error fetching data from database:', error);
+    console.error('Error fetching from database:', error);
     throw error;
   }
 };
-
-// Initialize the database when the script runs
-initDb();
