@@ -17,3 +17,5 @@ This is a refractor of an application to give it offline functionality and make 
 ![Screenshot 2024-07-17 192228](https://github.com/user-attachments/assets/e73693b7-df3c-4ef9-bdc9-478dd596a110)
 ## <ins>Service worker Running<ins>
 ![Screenshot 2024-07-17 192613](https://github.com/user-attachments/assets/88fa5833-2332-41e5-be9c-4f5e31bae126)
+##<ins>Deployed On Render<ins>
+https://my-text-pwa.onrender.com/
