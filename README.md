@@ -20,4 +20,4 @@ This is a refractor of an application to give it offline functionality and make 
 ## <ins>Deployed On Render<ins>
 https://my-text-pwa.onrender.com/
 ## <ins>Github Repo<ins>
-
+https://github.com/CCUE96/MY-TEXT-PWA
