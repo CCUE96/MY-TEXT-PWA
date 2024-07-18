@@ -15,6 +15,7 @@ This is a refractor of an application to give it offline functionality and make 
 
 ## <ins>MockUp<ins>
 <img width="1277" alt="image" src="https://github.com/user-attachments/assets/64212ab0-b041-47fc-83c4-fef9f638c1c9">
+
 ![Screenshot 2024-07-17 192228](https://github.com/user-attachments/assets/e73693b7-df3c-4ef9-bdc9-478dd596a110)
 ## <ins>Service worker Running<ins>
 ![Screenshot 2024-07-17 192613](https://github.com/user-attachments/assets/88fa5833-2332-41e5-be9c-4f5e31bae126)
