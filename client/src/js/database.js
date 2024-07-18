@@ -28,7 +28,7 @@ export const putDb = async (content) => {
     const tx = db.transaction('jate', 'readwrite');
     const store = tx.objectStore('jate');
     await store.put({id:1, value:content});
-    await tx.done;
+    await tx.complete;
     console.log('Data added to IndexedDB:', content);
   } catch (error) {
     console.error('Error adding to database:', error);
